@@ -13,19 +13,21 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        header {
+        .content {
             display: flex;
-            align-items: flex-start;
-            margin-bottom: 30px;
+            justify-content: space-between;
+        }
+        .left-column, .right-column {
+            width: 45%; /* Adjust column widths */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align items in left column */
         }
         img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
-            margin-right: 20px;
-        }
-        .profile-info {
-            text-align: left;
+            margin-bottom: 20px; /* Space below the image */
         }
         a {
             color: #2a6dbf;
@@ -44,18 +46,6 @@
         .social-icons li {
             margin-right: 15px;
         }
-        .content {
-            display: flex;
-            justify-content: space-between;
-        }
-        .about-section {
-            width: 60%; /* Adjust width for About Me section */
-            padding-left: 20px; /* Add some space between the two sections */
-        }
-        .interests, .education {
-            width: 50%; /* Make each section take half of the space */
-            padding: 10px; /* Add padding for better spacing */
-        }
         section {
             background-color: #fff;
             padding: 20px;
@@ -70,13 +60,16 @@
             display: flex;
             justify-content: space-between;
         }
+        .interests, .education {
+            width: 48%; /* Make each section take nearly half of the space */
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="https://github.com/erebboah/erebboah.github.io/blob/main/data/headshot.png?raw=true" alt="Elisabeth Rebboah">
-    <div class="profile-info">
+<div class="content">
+    <div class="left-column">
+        <img src="https://github.com/erebboah/erebboah.github.io/blob/main/data/headshot.png?raw=true" alt="Elisabeth Rebboah">
         <h1>Elisabeth Rebboah</h1>
         <p>PhD Graduate | Genomics & Bioinformatics Enthusiast</p>
         <p>Email: <a href="mailto:erebboah@gmail.com">erebboah@gmail.com</a></p>
@@ -87,10 +80,8 @@
             <li><a href="your_cv_link.pdf" download><i class="fas fa-file-download"></i></a></li>
         </ul>
     </div>
-</header>
 
-<div class="content">
-    <div class="about-section">
+    <div class="right-column">
         <section>
             <h2>About Me</h2>
             <p>Recent PhD graduate with experience in experimental wet lab work and dry lab bioinformatics, focusing on genomics and transcriptional regulation.</p>
