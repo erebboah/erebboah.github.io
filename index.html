@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elisabeth Rebboah's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,17 +14,23 @@
             color: #333;
         }
         header {
-            text-align: center;
+            display: flex;
+            align-items: center;
             margin-bottom: 30px;
         }
         img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
+            margin-right: 20px;
+        }
+        .profile-info {
+            text-align: left;
         }
         a {
             color: #2a6dbf;
             text-decoration: none;
+            margin-right: 10px;
         }
         a:hover {
             text-decoration: underline;
@@ -38,14 +45,31 @@
         h2 {
             color: #2a6dbf;
         }
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .social-icons li {
+            margin-right: 15px;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Elisabeth Rebboah</h1>
     <img src="your_photo.jpg" alt="Elisabeth Rebboah">
-    <p>Email: <a href="mailto:erebboah@gmail">erebboah@gmail</a></p>
+    <div class="profile-info">
+        <h1>Elisabeth Rebboah</h1>
+        <p>PhD Graduate | Genomics & Bioinformatics Enthusiast</p>
+        <p>Email: <a href="mailto:erebboah@gmail.com">erebboah@gmail.com</a></p>
+        <ul class="social-icons">
+            <li><a href="https://github.com/erebboah" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/elisabeth-rebboah-a33923104/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://scholar.google.com/citations?user=DkKDhe8AAAAJ" target="_blank"><i class="fas fa-user-graduate"></i></a></li>
+            <li><a href="your_cv_link.pdf" download><i class="fas fa-file-download"></i></a></li>
+        </ul>
+    </div>
 </header>
 
 <section>
@@ -68,16 +92,6 @@
     <ul>
         <li>PhD in Biological Sciences, University of California, Irvine (2024)</li>
         <li>BS in Bioengineering, University of California, San Diego (2015)</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Links</h2>
-    <ul>
-        <li><a href="https://github.com/erebboah">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/elisabeth-rebboah-a33923104/">LinkedIn</a></li>
-        <li><a href="https://scholar.google.com/citations?user=DkKDhe8AAAAJ">Google Scholar</a></li>
-        <li><a href="your_cv_link.pdf" download>Download CV</a></li>
     </ul>
 </section>
 
