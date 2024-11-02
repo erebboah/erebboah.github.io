@@ -15,7 +15,7 @@
         }
         header {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 30px;
         }
         img {
@@ -35,6 +35,27 @@
         a:hover {
             text-decoration: underline;
         }
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin-top: 10px;
+        }
+        .social-icons li {
+            margin-right: 15px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .about-section {
+            width: 60%; /* Adjust width for About Me section */
+            padding-left: 20px; /* Add some space between the two sections */
+        }
+        .interests, .education {
+            width: 50%; /* Make each section take half of the space */
+            padding: 10px; /* Add padding for better spacing */
+        }
         section {
             background-color: #fff;
             padding: 20px;
@@ -45,20 +66,16 @@
         h2 {
             color: #2a6dbf;
         }
-        .social-icons {
-            list-style: none;
-            padding: 0;
+        .columns {
             display: flex;
-        }
-        .social-icons li {
-            margin-right: 15px;
+            justify-content: space-between;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="https://github.com/erebboah/erebboah.github.io/blob/main/data/headshot.png" alt="Elisabeth Rebboah">
+    <img src="https://github.com/erebboah/erebboah.github.io/blob/main/data/headshot.png?raw=true" alt="Elisabeth Rebboah">
     <div class="profile-info">
         <h1>Elisabeth Rebboah</h1>
         <p>PhD Graduate | Genomics & Bioinformatics Enthusiast</p>
@@ -72,28 +89,33 @@
     </div>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>Recent PhD graduate with experience in experimental wet lab work and dry lab bioinformatics, focusing on genomics and transcriptional regulation.</p>
-</section>
+<div class="content">
+    <div class="about-section">
+        <section>
+            <h2>About Me</h2>
+            <p>Recent PhD graduate with experience in experimental wet lab work and dry lab bioinformatics, focusing on genomics and transcriptional regulation.</p>
+        </section>
 
-<section>
-    <h2>Interests</h2>
-    <ul>
-        <li>Single-cell RNA sequencing</li>
-        <li>Gene expression regulation</li>
-        <li>Bioinformatics</li>
-        <li>Data analysis and visualization</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Education</h2>
-    <ul>
-        <li>PhD in Biological Sciences, University of California, Irvine (2024)</li>
-        <li>BS in Bioengineering, University of California, San Diego (2015)</li>
-    </ul>
-</section>
+        <section class="columns">
+            <div class="interests">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Single-cell RNA sequencing</li>
+                    <li>Gene expression regulation</li>
+                    <li>Bioinformatics</li>
+                    <li>Data analysis and visualization</li>
+                </ul>
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>PhD in Biological Sciences, University of California, Irvine (2024)</li>
+                    <li>BS in Bioengineering, University of California, San Diego (2015)</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
 
 </body>
 </html>
