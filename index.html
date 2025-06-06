@@ -3,175 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>liz rebboah homepage</title>
+    <title>Elisabeth Rebboah</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-        color: #333;
-        background-image: url('https://github.com/erebboah/erebboah.github.io/raw/main/data/pines.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-    .content {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1200px;
-        margin: auto;
-        background-color: rgba(255, 255, 255, 0.4);
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .left-column {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: 5px;
-    }
-    .right-column {
-        width: 60%;
-        margin-right: 30px;
-    }
-    img {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        margin-bottom: 5px;
-    }
-    a {
-        color: #2a6dbf;
-        text-decoration: none;
-        margin-right: 10px;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-    .social-icons {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        margin-top: 10px;
-    }
-    .social-icons li {
-        margin-right: 15px;
-    }
-    section {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-    }
-    h1 {
-        margin-bottom: 10px;
-    }
-    p {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    h2 {
-        color: #2a6dbf;
-    }
-    .columns {
-        display: flex;
-        justify-content: space-between;
-    }
-    .interests {
-        width: 40%;
-    }
-    .education {
-        width: 60%;
-    }
-
-    /* Mobile Styles */
-    @media (max-width: 768px) {
-        .content {
-            flex-direction: column;
-            padding: 10px;
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background-image: url('https://github.com/erebboah/erebboah.github.io/raw/main/data/pines.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
-        .left-column, .right-column {
-            width: 100%;
-            margin-right: 0;
+        .content {
+            max-width: 1000px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header, section {
+            margin-bottom: 30px;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2a6dbf;
+        }
+        p, ul {
             text-align: center;
         }
-        .right-column {
-            padding-top: 15px;
+        ul.social-icons {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
         }
-        img {
-            width: 100px;
-            height: 100px;
+        ul.social-icons li {
+            margin: 0 10px;
         }
-        h1 {
-            font-size: 1.5em;
+        a {
+            color: #2a6dbf;
+            text-decoration: none;
         }
-        p, h2 {
-            font-size: 1em;
+        a:hover {
+            text-decoration: underline;
         }
         .columns {
-            flex-direction: column;
-            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        .interests, .education {
-            width: 100%;
-            margin-bottom: 20px;
+        .column {
+            flex: 1;
+            min-width: 45%;
         }
-    }
-</style>
-
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .columns {
+                flex-direction: column;
+                align-items: center;
+            }
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="content">
+        <header>
+            <img src="https://github.com/erebboah/erebboah.github.io/blob/main/data/headshot.png?raw=true" alt="headshot">
+            <h1>Elisabeth (Liz) Rebboah</h1>
+            <p>Postdoctoral Scholar | RNA Enthusiast</p>
+            <p>San Diego, CA | <a href="mailto:erebboah@gmail.com">erebboah@gmail.com</a></p>
+            <p>
+                <a href="https://github.com/erebboah" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/elisabeth-rebboah/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=DkKDhe8AAAAJ" target="_blank"><i class="fas fa-user-graduate"></i></a>
+                <a href="https://github.com/erebboah/erebboah.github.io/raw/main/data/rebboah_cv.pdf" download>Download CV</a>
+            </p>
+        </header>
 
-<div class="content">
-    <div class="left-column">
-        <img src="https://github.com/erebboah/erebboah.github.io/blob/main/data/headshot.png?raw=true" alt="headshot">
-        <h1>Elisabeth (Liz) Rebboah</h1>
-        <p>Postdoctoral Scholar | RNA Enthusiast</p>
-        <p>San Diego, CA</p>
-        <p>Email: <a href="mailto:erebboah@gmail.com">erebboah@gmail.com</a></p>
-        <p><a href="https://github.com/erebboah/erebboah.github.io/raw/main/data/rebboah_cv.pdf" download>Download CV</a></p> <!-- Added hyperlink for CV -->
-        <ul class="social-icons">
-            <li><a href="https://github.com/erebboah" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/elisabeth-rebboah/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://scholar.google.com/citations?user=DkKDhe8AAAAJ" target="_blank"><i class="fas fa-user-graduate"></i></a></li>
-        </ul>
-    </div>
-
-    <div class="right-column">
         <section>
-            <h2>About me</h2>
+            <h2>About Me</h2>
             <p>Recent PhD graduate focused on single-cell and multi-omic NGS assay development and analysis.</p>
         </section>
 
         <section class="columns">
-            <div class="interests">
-                <h2>Interests</h2>
+            <div class="column">
+                <h2>Research Interests</h2>
                 <ul>
                     <li>Single-cell/nucleus RNA-seq, ATAC-seq</li>
                     <li>Spatial transcriptomics</li>
                     <li>MicroRNA-seq</li>
                     <li>Assay development</li>
-                    <li>Project management</li>
+                    <li>Cell type/state dynamics</li>
                     <li>Systems biology</li>
-                    <li>Bioinformatics</li>
-                    <li>Cell culture & mouse husbandry</li>
-                    <li>Skeletal muscle development & differentiation</li>
                 </ul>
             </div>
-            <div class="education">
+            <div class="column">
                 <h2>Education</h2>
                 <ul>
-                    <li>PhD in Computational Biology, University of California, Irvine (2024)</li>
-                    <li>BS in Bioengineering, University of California, San Diego (2015)</li>
+                    <li>PhD in Computational Biology, UC Irvine (2024)</li>
+                    <li>BS in Bioengineering, UC San Diego (2015)</li>
                 </ul>
             </div>
         </section>
-    </div>
-</div>
 
+        <section class="project">
+            <h2>IGVF Project: 8 Founder Mouse Strains</h2>
+            <p>Single-nucleus RNA-seq across 8 genetically diverse strains to understand transcriptional variation across tissues.</p>
+            <p><a href="#">Link to paper (placeholder)</a> | <a href="#">Public datasets (placeholder)</a></p>
+            <img src="https://via.placeholder.com/800x300?text=IGVF+Project+Figure" alt="IGVF figure">
+        </section>
+
+        <section class="project">
+            <h2>ENCODE Project</h2>
+            <p>Contributed to ENCODE with half a million nuclei, building foundational resources for single-nucleus atlases.</p>
+            <p><a href="#">Link to paper (placeholder)</a> | <a href="#">Public datasets (placeholder)</a></p>
+            <img src="https://via.placeholder.com/800x300?text=ENCODE+Project+Figure" alt="ENCODE figure">
+        </section>
+
+        <section class="project">
+            <h2>Spatial Transcriptomics in Mouse Hypothalamus & Pituitary</h2>
+            <p>Current focus: spatially resolving transcriptional programs underlying cell identity and state in key brain tissues.</p>
+            <p><a href="https://github.com/erebboah/spatial-hypothalamus" target="_blank">GitHub Repo</a></p>
+            <img src="https://via.placeholder.com/800x300?text=Spatial+Transcriptomics+Figure" alt="Spatial project figure">
+        </section>
+    </div>
 </body>
 </html>
