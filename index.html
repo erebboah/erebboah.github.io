@@ -2,149 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Elisabeth Rebboah is an experimental and computational biologist studying rare cells and complex human disease."
+    >
+
     <title>Elisabeth Rebboah</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            color: #333;
-            background-image: url('https://github.com/erebboah/erebboah.github.io/raw/main/data/pines.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        .content {
-            max-width: 1000px;
-            margin: auto;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        header, section {
-            margin-bottom: 30px;
-        }
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            display: block;
-            margin: 0 auto 10px auto;
-        }
-        h1, h2 {
-            text-align: center;
-            color: #2a6dbf;
-        }
-        p, ul {
-            text-align: center;
-        }
-        ul.social-icons {
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            list-style: none;
-        }
-        ul.social-icons li {
-            margin: 0 10px;
-        }
-        a {
-            color: #2a6dbf;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .columns {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .column {
-            flex: 1;
-            min-width: 45%;
-        }
-        .column ul {
-            text-align: left;
-            padding-left: 20px;
-        }
 
-        .project img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin: 10px 0;
-        }
-        @media (max-width: 768px) {
-            .columns {
-                flex-direction: column;
-                align-items: center;
-            }
-            .column {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="content">
-        <header>
-            <img src="https://github.com/erebboah/erebboah.github.io/blob/main/data/headshot.png?raw=true" alt="headshot">
-            <h1>Elisabeth (Liz) Rebboah</h1>
-            <p>Postdoctoral Scholar | RNA Enthusiast</p>
-            <p>San Diego, CA | <a href="mailto:erebboah@gmail.com">erebboah@gmail.com</a></p>
-            <p>
-                <a href="https://github.com/erebboah" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/elisabeth-rebboah/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://scholar.google.com/citations?user=DkKDhe8AAAAJ" target="_blank"><i class="fas fa-user-graduate"></i></a>
-                <a href="https://github.com/erebboah/erebboah.github.io/raw/main/data/rebboah_cv.pdf" download>Download CV</a>
+
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+
+            <a class="wordmark" href="index.html">
+                REBBOAH
+            </a>
+
+            <div class="navigation-links">
+                <a href="research.html">Research</a>
+                <a href="projects.html">Projects</a>
+                <a href="publications.html">Publications</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="about.html">About</a>
+                <a href="data/rebboah_cv.pdf" target="_blank">CV</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p class="eyebrow">
+                    Experimental + computational biology
+                </p>
+
+                <h1>
+                    Rare cells.<br>
+                    Complicated systems.<br>
+                    Made visible.
+                </h1>
+
+                <p class="hero-description">
+                    I study how rare cells and hidden biological states shape
+                    human disease using experimental biology, single-cell and
+                    spatial technologies, and clinical data.
+                </p>
+
+                <div class="hero-links">
+                    <a class="button" href="research.html">
+                        Research
+                    </a>
+
+                    <a class="button" href="projects.html">
+                        Selected projects
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="data/headshot.png"
+                    alt="Elisabeth Rebboah"
+                >
+            </div>
+
+        </section>
+
+
+        <section class="introduction">
+
+            <p class="introduction-heading">
+                I build experiments and analyses to understand complicated
+                biological systems, then help other people see what I see.
             </p>
-        </header>
 
-        <section>
-            <h2>About Me</h2>
-            <p>Computational biologist with a background in experimental assay development, specializing in large-scale single-cell and multi-omic data.</p>
+            <p>
+                My work spans assay development, multimodal computation,
+                human translational research, and scientific communication.
+            </p>
+
+            <a class="text-link" href="about.html">
+                More about me →
+            </a>
+
         </section>
 
-        <section class="columns">
-            <div class="column">
-                <h2>Research Interests</h2>
-                <ul>
-                    <li>NGS assay development</li>
-                    <li>Characterization of transcriptional regulation across cell types and cell states</li>
-                    <li>Multi-omics data integration</li>
-                </ul>
-            </div>
-            <div class="column">
-                <h2>Education</h2>
-                    <p>PhD in Computational Biology, UC Irvine (2024)</p>
-                    <p>BS in Bioengineering, UC San Diego (2015)</p>
-            </div>
-        </section>
+    </main>
 
-        <section class="project">
-            <h2>IGVF Project: Characterization of gene expression variation across Collaborative Cross founder strains</h2>
-            <p>Exploring the impact of genotype on gene expression across 8 core tissues using snRNA-seq. Findings include expansion of immune cell subtypes in key metabolic tissues of a well-characterized diabetes-prone strain (NZO) as well as early detection of transcriptional over-activation in skeletal muscle stem cells of a mouse strain (A) known to develop muscular dystrophy.</p>
-            <p><a href="#">Link to paper (placeholder)</a> | <a href="#">Public datasets (placeholder)</a></p>
-            <img src="https://via.placeholder.com/800x300?text=IGVF+Project+Figure" alt="IGVF figure">
-        </section>
 
-        <section class="project">
-            <h2>ENCODE Project: Mouse postnatal development at the single-cell level</h2>
-            <p>Contributed to ENCODE with half a million snRNA-seq nuclei, building foundational resources for developmental single-nucleus atlases across 5 core tissues. Identified key drivers of transcriptional programs in dynamic and sex-specific cell types by integrating gene expression with open chromatin signatures.</p>
-            <p><a href="#">Link to paper (placeholder)</a> | <a href="#">Public datasets (placeholder)</a></p>
-            <img src="https://via.placeholder.com/800x300?text=ENCODE+Project+Figure" alt="ENCODE figure">
-        </section>
+    <footer class="site-footer">
 
-        <section class="project">
-            <h2>Spatial transcriptomics in mouse hypothalamus & pituitary</h2>
-            <p>Current focus: Characterization of cell types and states in key brain tissues with multiplexed FISH (MERFISH) integration with whole-transcritome single-cell data.</p>
-            <p><a href="https://github.com/erebboah/spatial-hypothalamus" target="_blank">GitHub Repo</a></p>
-            <img src="https://via.placeholder.com/800x300?text=Spatial+Transcriptomics+Figure" alt="Spatial project figure">
-        </section>
-    </div>
+        <p>
+            © 2026 Elisabeth Rebboah
+        </p>
+
+        <div class="footer-links">
+            <a href="mailto:erebboah@gmail.com">Email</a>
+            <a href="https://github.com/erebboah">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=DkKDhe8AAAAJ">
+                Google Scholar
+            </a>
+        </div>
+
+    </footer>
+
 </body>
 </html>
