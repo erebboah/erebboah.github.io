@@ -91,6 +91,7 @@ a {
 
 .hero-text {
     max-width: 1050px;
+    transform: translateY(-80px);
 }
 
 .eyebrow {
@@ -258,6 +259,10 @@ a {
 
     .hero h1 {
         font-size: clamp(3.3rem, 16vw, 5.5rem);
+    }
+
+    .hero-text {
+        transform: none;
     }
 
     .introduction {
