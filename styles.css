@@ -262,7 +262,7 @@ a {
     }
 
     .hero-text {
-        transform: none;
+        transform: translateY(-30px);
     }
 
     .introduction {
